@@ -10,7 +10,7 @@ Using Excel, we review the raw data for all theater projects using data filterin
 
 ### Analysis of Outcomes Based on Launch Date
 From the full data set, we filter out only projects in the theater category, combining this data for all years.  The outcome of each project is reviewed then on a month-by-month basis to determine, for each month, if there is a direct relationship between successful, failed, and canceled projects.  The data contain a small number of projects that were live at the time of data retrieval - this data has been exlucded from the analysis.
-[https://github.com/rscalise88/kickstarter-analysis/resources/theater_outcomes_vs_launch.png]
+[https://github.com/rscalise88/kickstarter-analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png]
 
 ### Analysis of Outcomes Based on Goals
 For all theater projects, the goals of the project were first divided into tiers. Starting at any projects requested less than $1,000 in funding, next any that requested up to $4,999, then increasing each category by $5,000 until the final tier, which contains all projects seeking more than $50,000 in funding.  Within each tier, the number of successful, failed, and canceled projects were calculated from the raw data using a COUNTIFS function within Excel.
@@ -19,7 +19,7 @@ For example:
 =COUNTIFS(Kickstarter!$D:$D, "<1000", Kickstarter!$F:$F, "successful", Kickstarter!$R:$R, "plays")
 
 The total of all project outcomes are summed for each tier level, then divided by each the number of successes, failures, and cancellations in order to determine the percentage of total projects that each outcome represents for that goal tier.  This data is then plotted linearly, comparing each goal tier to its eventual outcome.
-[https://github.com/rscalise88/kickstarter-analysis/resources/outcomes_vs_goals.png]
+[https://github.com/rscalise88/kickstarter-analysis/blob/main/Resources/Outcomes_vs_Goals.png]
 
 ### Challenges and Difficulties Encountered
 Due to the narrow scope of the data available, it's difficult to draw a concrete conclusion on all of the factors that might lead to a project's success or failure.  This is discussed in greater detail below.
